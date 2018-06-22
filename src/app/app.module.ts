@@ -1,16 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HeroeComponent } from './heroe/heroe.component';
+import { NgModule } from '@angular/core';
+// <-- NgModel lives here
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [ AppComponent, HeroeComponent ],
+	imports: [ BrowserModule, FormsModule ],
+	providers: [],
+	bootstrap: [ AppComponent ],
 })
-export class AppModule { }
+export class AppModule {}
